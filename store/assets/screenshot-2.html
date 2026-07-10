@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body {
+    width: 1280px; height: 800px; overflow: hidden;
+    font-family: -apple-system, 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e1b4b 0%, #4f46e5 100%);
+    display: flex; align-items: center; justify-content: center; gap: 90px;
+    color: #fff;
+  }
+  .features { max-width: 520px; }
+  .features h1 { font-size: 44px; font-weight: 800; letter-spacing: -1px; line-height: 1.15; }
+  .features h1 em { font-style: normal; color: #ffb300; }
+  ul { list-style: none; margin-top: 34px; }
+  li { display: flex; gap: 14px; font-size: 20px; margin-bottom: 20px; align-items: baseline; }
+  li .ico { font-size: 22px; }
+  li b { font-weight: 700; }
+  li span.txt { opacity: .92; }
+  .popup {
+    width: 300px; background: #fff; color: #1e1b4b;
+    border-radius: 16px; padding: 22px; font-size: 14px;
+    box-shadow: 0 30px 80px rgba(0,0,0,.5);
+  }
+  .popup h2 { font-size: 17px; margin-bottom: 14px; }
+  .popup label { display: block; font-weight: 600; margin: 14px 0 6px; }
+  .popup .val { float: right; font-weight: 400; color: #888; }
+  .select {
+    border: 1px solid #ddd; border-radius: 8px; padding: 8px 10px; color: #333;
+    display: flex; justify-content: space-between;
+  }
+  .slider { height: 6px; background: #e5e7eb; border-radius: 99px; position: relative; margin: 12px 0 4px; }
+  .slider .fill { position: absolute; left: 0; top: 0; bottom: 0; width: 55%; background: #4f46e5; border-radius: 99px; }
+  .slider .knob {
+    position: absolute; left: 55%; top: 50%; transform: translate(-50%,-50%);
+    width: 18px; height: 18px; background: #fff; border-radius: 50%;
+    box-shadow: 0 1px 5px rgba(0,0,0,.35);
+  }
+  .btnrow { display: flex; gap: 10px; margin-top: 20px; }
+  .btnrow div {
+    flex: 1; text-align: center; padding: 9px 0; border-radius: 9px; font-weight: 600;
+  }
+  .preview { background: #4f46e5; color: #fff; }
+  .stopb { background: #eee; color: #333; }
+</style>
+</head>
+<body>
+  <div class="features">
+    <h1>Karaoke for reading.<br><em>Private by design.</em></h1>
+    <ul>
+      <li><span class="ico">🎯</span><span class="txt"><b>Word-by-word highlight</b> synced to speech</span></li>
+      <li><span class="ico">🗣️</span><span class="txt"><b>Any system voice</b> — speed &amp; pitch control</span></li>
+      <li><span class="ico">📜</span><span class="txt"><b>Auto-scroll</b> keeps the text in view</span></li>
+      <li><span class="ico">🔒</span><span class="txt"><b>100% on-device</b> — text never leaves your computer</span></li>
+      <li><span class="ico">✈️</span><span class="txt"><b>Works offline</b> — no accounts, no tracking</span></li>
+    </ul>
+  </div>
+  <div class="popup">
+    <h2>🔊 Voxlight</h2>
+    <label>Voice</label>
+    <div class="select"><span>Ava (en-US) · local</span><span>▾</span></div>
+    <label>Speed <span class="val">1.1×</span></label>
+    <div class="slider"><div class="fill"></div><div class="knob"></div></div>
+    <label>Pitch <span class="val">1.0</span></label>
+    <div class="slider"><div class="fill" style="width:45%"></div><div class="knob" style="left:45%"></div></div>
+    <div class="btnrow"><div class="preview">Preview</div><div class="stopb">Stop</div></div>
+  </div>
+</body>
+</html>

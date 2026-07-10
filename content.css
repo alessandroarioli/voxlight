@@ -1,0 +1,8 @@
+::highlight(voxlight-spoken) {
+  background-color: rgba(255, 179, 0, 0.22);
+}
+
+::highlight(voxlight-word) {
+  background-color: #ffb300;
+  color: #1a1a1a;
+}

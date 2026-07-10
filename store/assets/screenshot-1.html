@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body {
+    width: 1280px; height: 800px; overflow: hidden;
+    font-family: -apple-system, 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .caption {
+    color: #fff; text-align: center; padding: 38px 0 26px;
+  }
+  .caption h1 { font-size: 34px; font-weight: 700; letter-spacing: -0.5px; }
+  .caption p { font-size: 19px; opacity: .9; margin-top: 8px; }
+  .browser {
+    width: 1040px; background: #fff; border-radius: 14px 14px 0 0;
+    box-shadow: 0 24px 60px rgba(0,0,0,.35); flex: 1; position: relative;
+  }
+  .chrome-bar {
+    height: 44px; background: #f1f3f4; border-radius: 14px 14px 0 0;
+    display: flex; align-items: center; padding: 0 16px; gap: 8px;
+  }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .url {
+    flex: 1; margin-left: 12px; background: #fff; border-radius: 99px;
+    height: 28px; display: flex; align-items: center; padding: 0 14px;
+    font-size: 13px; color: #666;
+  }
+  .page { padding: 44px 90px; }
+  .page h2 { font-size: 30px; color: #1a1a1a; margin-bottom: 8px; }
+  .page .byline { color: #999; font-size: 14px; margin-bottom: 26px; }
+  .page p { font-size: 19px; line-height: 1.75; color: #333; margin-bottom: 18px; }
+  .spoken { background: rgba(255, 179, 0, 0.25); }
+  .word { background: #ffb300; color: #1a1a1a; border-radius: 3px; padding: 0 2px; }
+  .pill {
+    position: absolute; bottom: 26px; right: 26px;
+    display: flex; align-items: center; gap: 10px;
+    background: #1e1b4b; color: #fff; padding: 10px 18px;
+    border-radius: 999px; font-size: 15px; font-weight: 600;
+    box-shadow: 0 4px 16px rgba(0,0,0,.35);
+  }
+  .pill .btn {
+    width: 28px; height: 28px; border-radius: 50%;
+    background: rgba(255,255,255,.15); display: flex;
+    align-items: center; justify-content: center; font-size: 13px; font-weight: 400;
+  }
+</style>
+</head>
+<body>
+  <div class="caption">
+    <h1>The highlight follows every spoken word</h1>
+    <p>Select text → right-click → listen. Your eyes never lose the place.</p>
+  </div>
+  <div class="browser">
+    <div class="chrome-bar">
+      <div class="dot" style="background:#ff5f57"></div>
+      <div class="dot" style="background:#febc2e"></div>
+      <div class="dot" style="background:#28c840"></div>
+      <div class="url">🔒 &nbsp; en.wikipedia.org/wiki/Aurora</div>
+    </div>
+    <div class="page">
+      <h2>Aurora</h2>
+      <div class="byline">From Wikipedia, the free encyclopedia</div>
+      <p><span class="spoken">An aurora, also commonly known as the northern lights or southern lights, is a natural light display in Earth's sky. Auroras are the</span> <span class="word">result</span> of disturbances in the Earth's magnetosphere caused by the solar wind.</p>
+      <p>Major disturbances result from enhancements in the speed of the solar wind from coronal holes and coronal mass ejections. These disturbances alter the trajectories of charged particles in the magnetospheric plasma.</p>
+      <p>These particles, mainly electrons and protons, precipitate into the upper atmosphere. The resulting ionization and excitation of atmospheric constituents emit light of varying colour and complexity.</p>
+    </div>
+    <div class="pill">
+      <span>Voxlight</span>
+      <div class="btn">⏸</div>
+      <div class="btn">✕</div>
+    </div>
+  </div>
+</body>
+</html>
